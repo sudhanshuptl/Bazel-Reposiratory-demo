@@ -1,0 +1,12 @@
+py_library(
+    name="calculater",
+    srcs=["calculater/calculater.py"]
+)
+
+py_test(
+    name = "calculater_test",
+    srcs = ["calculater/calculater_test.py"],
+    deps = [
+        "//Projects/calculater:calculater"
+    ],
+)
